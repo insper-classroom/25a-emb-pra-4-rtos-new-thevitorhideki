@@ -120,7 +120,7 @@ int main() {
 
     xTaskCreate(trigger_task, "Trigger", 4095, NULL, 1, NULL);
     xTaskCreate(echo_task, "Echo", 4095, NULL, 1, NULL);
-    // xTaskCreate(oled_task, "Oled", 4095, NULL, 1, NULL);
+    xTaskCreate(oled_task, "Oled", 4095, NULL, 1, NULL);
 
     vTaskStartScheduler();
 
